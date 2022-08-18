@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{1BC33366-01C6-4F93-8FA5-17F5DB0BF6AB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Neo-Engine", "Neo-Engine\Neo-Engine.vcxproj", "{08018CEB-BF87-4890-A834-0ABB3A1598E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08018CEB-BF87-4890-A834-0ABB3A1598E4}.Debug|x64.ActiveCfg = Debug|x64
+		{08018CEB-BF87-4890-A834-0ABB3A1598E4}.Debug|x64.Build.0 = Debug|x64
+		{08018CEB-BF87-4890-A834-0ABB3A1598E4}.Release|x64.ActiveCfg = Release|x64
+		{08018CEB-BF87-4890-A834-0ABB3A1598E4}.Release|x64.Build.0 = Release|x64
+		{1BC33366-01C6-4F93-8FA5-17F5DB0BF6AB}.Debug|x64.ActiveCfg = Debug|x64
+		{1BC33366-01C6-4F93-8FA5-17F5DB0BF6AB}.Debug|x64.Build.0 = Debug|x64
+		{1BC33366-01C6-4F93-8FA5-17F5DB0BF6AB}.Release|x64.ActiveCfg = Release|x64
+		{1BC33366-01C6-4F93-8FA5-17F5DB0BF6AB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF852767-8431-4E31-879A-53D305B5F168}
+	EndGlobalSection
+EndGlobal
