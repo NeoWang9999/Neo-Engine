@@ -1,3 +1,7 @@
-*.log
-
+# Directories
 .vs/
+
+# Files
+*.user 
+*.log
+*.tlog
