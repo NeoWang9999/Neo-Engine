@@ -1,0 +1,3 @@
+[submodule "Neo-Engine/vendor/spdlog"]
+	path = Neo-Engine/vendor/spdlog
+	url = git@github.com:gabime/spdlog.git

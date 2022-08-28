@@ -16,7 +16,6 @@ namespace Neo {
 	{
 		while (true)
 		{
-			printf("Wellcome NEO!\n");
 		}
 	}
 }

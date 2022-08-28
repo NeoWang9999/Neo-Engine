@@ -20,5 +20,3 @@ Neo::Application* Neo::CreateApplication()
 {
 	return new Sandbox();
 }
-
-
