@@ -4,6 +4,9 @@
     <Filter Include="Neo">
       <UniqueIdentifier>{270C880B-9315-887C-1C91-9E7C8899937C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Neo\Events">
+      <UniqueIdentifier>{2BA6FFA1-175E-41EF-8065-1A4B6C3CDCDF}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Neo.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Neo\EntryPoint.h">
       <Filter>Neo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Neo\Events\ApplicationEvent.h">
+      <Filter>Neo\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Neo\Events\Event.h">
+      <Filter>Neo\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Neo\Events\KeyEvent.h">
+      <Filter>Neo\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Neo\Events\MouseEvent.h">
+      <Filter>Neo\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Neo\Log.h">
       <Filter>Neo</Filter>
