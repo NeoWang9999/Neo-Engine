@@ -34,6 +34,7 @@
     <ClInclude Include="src\Neo\Log.h">
       <Filter>Neo</Filter>
     </ClInclude>
+    <ClInclude Include="src\NeoPCH.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Neo\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Neo\Log.cpp">
       <Filter>Neo</Filter>
     </ClCompile>
+    <ClCompile Include="src\NeoPCH.cpp" />
   </ItemGroup>
 </Project>

@@ -18,6 +18,9 @@ project "Neo-Engine"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+    pchheader "NeoPCH.h"
+    pchsource "Neo-Engine/src/NeoPCH.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",

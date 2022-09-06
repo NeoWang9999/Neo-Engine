@@ -1,3 +1,4 @@
+#include "NeoPCH.h"
 #include "Application.h"
 
 #include "Neo/Events/ApplicationEvent.h"
@@ -29,7 +30,6 @@ namespace Neo {
 		}
 
 		while (true)
-		{
-		}
+		{}
 	}
 }
