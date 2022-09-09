@@ -1,3 +1,6 @@
 [submodule "Neo-Engine/vendor/spdlog"]
 	path = Neo-Engine/vendor/spdlog
 	url = git@github.com:gabime/spdlog.git
+[submodule "Neo-Engine/vendor/GLFW"]
+	path = Neo-Engine/vendor/GLFW
+	url = git@github.com:TheCherno/glfw.git
