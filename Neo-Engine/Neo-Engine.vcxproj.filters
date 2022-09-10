@@ -7,6 +7,12 @@
     <Filter Include="Neo\Events">
       <UniqueIdentifier>{2BA6FFA1-175E-41EF-8065-1A4B6C3CDCDF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Neo.h" />
@@ -34,7 +40,13 @@
     <ClInclude Include="src\Neo\Log.h">
       <Filter>Neo</Filter>
     </ClInclude>
+    <ClInclude Include="src\Neo\Window.h">
+      <Filter>Neo</Filter>
+    </ClInclude>
     <ClInclude Include="src\NeoPCH.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Neo\Application.cpp">
@@ -44,5 +56,8 @@
       <Filter>Neo</Filter>
     </ClCompile>
     <ClCompile Include="src\NeoPCH.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

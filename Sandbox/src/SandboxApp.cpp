@@ -3,20 +3,20 @@
 class Sandbox : public Neo::Application
 {
 public:
-	Sandbox()
-	{
+    Sandbox()
+    {
 
-	}
+    }
 
-	~Sandbox()
-	{
+    ~Sandbox()
+    {
 
-	}
+    }
 
 };
 
 
 Neo::Application* Neo::CreateApplication()
 {
-	return new Sandbox();
+    return new Sandbox();
 }

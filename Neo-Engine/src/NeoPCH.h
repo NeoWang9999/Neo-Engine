@@ -12,10 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Neo/Log.h"
 
 #ifdef NEO_PLATFORM_WINDOWS
-	#include <Windows.h>
+    #include <Windows.h>
 #endif // NEO_PLATFORM_WINDOWS
-
-
-
