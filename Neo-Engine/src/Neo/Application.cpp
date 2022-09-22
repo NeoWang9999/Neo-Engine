@@ -18,12 +18,29 @@ namespace Neo {
     {
     }
 
+    void Application::PushLayer(Layer* layer)
+    {
+        m_LayerStack.PushLayer(layer);
+    }
+
+    void Application::PushOverlay(Layer* layer)
+    {
+        m_LayerStack.PushOverLayer(layer);
+    }
+
     void Application::OnEvent(Event& e)
     {
         EventDispatcher dispacther(e);
         dispacther.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
 
-        NEO_CORE_INFO("{0}", e.ToString());
+        //NEO_CORE_INFO("{0}", e.ToString());
+
+        for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
+        {
+            (*--it)->OnEvent(e);
+            if (e.Handled)
+                break;
+        }
     }
 
     void Application::Run()
@@ -32,6 +49,9 @@ namespace Neo {
         {
             glClearColor(1, 0, 1, 1);
             glClear(GL_COLOR_BUFFER_BIT);
+
+            for (Layer* layer : m_LayerStack)
+                layer->OnUpdate();
             m_Window->OnUpdate();
         }
     }

@@ -149,6 +149,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Neo\Layer.h" />
+    <ClInclude Include="src\Neo\LayerStack.h" />
     <ClInclude Include="src\Neo.h" />
     <ClInclude Include="src\Neo\Application.h" />
     <ClInclude Include="src\Neo\Core.h" />
@@ -163,6 +165,8 @@
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Neo\Layer.cpp" />
+    <ClCompile Include="src\Neo\LayerStack.cpp" />
     <ClCompile Include="src\Neo\Application.cpp" />
     <ClCompile Include="src\Neo\Log.cpp" />
     <ClCompile Include="src\NeoPCH.cpp">
