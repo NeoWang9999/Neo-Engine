@@ -1,9 +1,7 @@
 #pragma once
 
-#include <GLFW/glfw3.h>
-
 #include "Neo/Window.h"
-
+#include <GLFW/glfw3.h>
 
 namespace Neo {
 

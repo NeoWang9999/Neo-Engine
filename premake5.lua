@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Neo-Engine/vendor/GLFW/include"
+IncludeDir["Glad"] = "Neo-Engine/vendor/Glad/include"
 
 include "Neo-Engine/vendor/GLFW"
+include "Neo-Engine/vendor/Glad"
 
 project "Neo-Engine"
     location "Neo-Engine"
@@ -37,12 +39,14 @@ project "Neo-Engine"
     {
         "%{prj.name}/src",
         "%{prj.name}/vendor/spdlog/include",
-        "%{IncludeDir.GLFW}"
+        "%{IncludeDir.GLFW}",
+        "%{IncludeDir.Glad}"
     }
 
     links
     {
         "GLFW",
+        "Glad",
         "opengl32.lib"
     }
 
@@ -54,7 +58,8 @@ project "Neo-Engine"
         defines
         {
             "NEO_PLATFORM_WINDOWS",
-            "NEO_BUILD_DLL"
+            "NEO_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
         }
 
         postbuildcommands

@@ -5,9 +5,16 @@
 #include "Neo/Events/KeyEvent.h"
 #include "Neo/Events/MouseEvent.h"
 
+#include <glad/glad.h>
+
 namespace Neo {
 
     static bool s_GLFWInitialized = false;
+
+    static void GLFWErrorCallback(int error, const char* description)
+    {
+        NEO_CORE_ERROR("GLFW Error ({0}): {1}", error, description);
+    }
 
     Window* Window::Create(const WindowProps& props)
     {
@@ -36,12 +43,16 @@ namespace Neo {
         {
             int success = glfwInit();
             NEO_CORE_ASSERT(success, "Could not initialize GLFW!");
-
+            glfwSetErrorCallback(GLFWErrorCallback);
             s_GLFWInitialized = true;
         }
 
         m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
         glfwMakeContextCurrent(m_Window);  // make this context current
+
+        int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+        NEO_ASSERT(status, "Faild to initialize Glad!")
+
         glfwSetWindowUserPointer(m_Window, &m_Data);  // for event callback
         SetVSync(true);
 
