@@ -14,7 +14,6 @@ public:
 
     void OnEvent(Neo::Event& event) override
     {
-        //NEO_INFO("ExLayer::Update");
         NEO_TRACE("{0}", event.ToString());
     }
 };

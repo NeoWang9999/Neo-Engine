@@ -33,8 +33,6 @@ namespace Neo {
         EventDispatcher dispacther(e);
         dispacther.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
 
-        //NEO_CORE_INFO("{0}", e.ToString());
-
         for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
         {
             (*--it)->OnEvent(e);
@@ -52,6 +50,7 @@ namespace Neo {
 
             for (Layer* layer : m_LayerStack)
                 layer->OnUpdate();
+
             m_Window->OnUpdate();
         }
     }

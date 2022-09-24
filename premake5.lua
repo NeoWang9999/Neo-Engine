@@ -114,12 +114,15 @@ project "Sandbox"
 
     filter "configurations:Debug"
         defines "NEO_DEBUG"
+		buildoptions "/MDd"
         symbols "On"
 
     filter "configurations:Release"
         defines "NEO_RELEASE"
+		buildoptions "/MD"
         optimize "On"
 
     filter "configurations:Dist"
         defines "NEO_DIST"
+		buildoptions "/MD"
         optimize "On"

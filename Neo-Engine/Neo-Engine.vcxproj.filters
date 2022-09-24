@@ -37,6 +37,12 @@
     <ClInclude Include="src\Neo\Events\MouseEvent.h">
       <Filter>Neo\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Neo\Layer.h">
+      <Filter>Neo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Neo\LayerStack.h">
+      <Filter>Neo</Filter>
+    </ClInclude>
     <ClInclude Include="src\Neo\Log.h">
       <Filter>Neo</Filter>
     </ClInclude>
@@ -47,11 +53,15 @@
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
-    <ClInclude Include="src\Neo\Layer.h" />
-    <ClInclude Include="src\Neo\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Neo\Application.cpp">
+      <Filter>Neo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Neo\Layer.cpp">
+      <Filter>Neo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Neo\LayerStack.cpp">
       <Filter>Neo</Filter>
     </ClCompile>
     <ClCompile Include="src\Neo\Log.cpp">
@@ -61,7 +71,5 @@
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\Neo\Layer.cpp" />
-    <ClCompile Include="src\Neo\LayerStack.cpp" />
   </ItemGroup>
 </Project>
