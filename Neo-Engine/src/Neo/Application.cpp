@@ -3,17 +3,20 @@
 
 #include <glad/glad.h>
 
-#define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
 
 namespace Neo {
 
+#define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
+
+    Application* Application::s_Instance = nullptr;  // 类的静态变量需要赋初始化值，否则 LNK ERROR
+
     Application::Application()
     {
+        NEO_CORE_ASSERT(!s_instance, "Application already exists!");
+        s_Instance = this;
+
         m_Window = std::unique_ptr<Window>(Window::Create());
         m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
-
-        unsigned int id;
-        glGenVertexArrays(1, &id);
     }
 
     Application::~Application()
@@ -23,11 +26,13 @@ namespace Neo {
     void Application::PushLayer(Layer* layer)
     {
         m_LayerStack.PushLayer(layer);
+        layer->OnAttach();
     }
 
     void Application::PushOverlay(Layer* layer)
     {
         m_LayerStack.PushOverLayer(layer);
+        layer->OnAttach();
     }
 
     void Application::OnEvent(Event& e)

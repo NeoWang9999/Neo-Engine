@@ -4,3 +4,6 @@
 [submodule "Neo-Engine/vendor/GLFW"]
 	path = Neo-Engine/vendor/GLFW
 	url = git@github.com:TheCherno/glfw.git
+[submodule "Neo-Engine/vendor/ImGui"]
+	path = Neo-Engine/vendor/ImGui
+	url = https://github.com/TheCherno/imgui

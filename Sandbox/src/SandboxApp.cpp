@@ -24,6 +24,7 @@ public:
     Sandbox()
     {
         PushLayer(new ExLayer());
+        PushOverlay(new Neo::ImGuiLayer());
     }
 
     ~Sandbox()
