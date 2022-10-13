@@ -12,7 +12,7 @@ namespace Neo {
 
     Application::Application()
     {
-        NEO_CORE_ASSERT(!s_instance, "Application already exists!");
+        NEO_CORE_ASSERT(!s_Instance, "Application already exists!");
         s_Instance = this;
 
         m_Window = std::unique_ptr<Window>(Window::Create());

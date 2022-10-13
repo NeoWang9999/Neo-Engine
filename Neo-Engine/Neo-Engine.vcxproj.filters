@@ -7,8 +7,14 @@
     <Filter Include="Neo\Events">
       <UniqueIdentifier>{2BA6FFA1-175E-41EF-8065-1A4B6C3CDCDF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Neo\ImGui">
+      <UniqueIdentifier>{91C28879-FD2C-3DF0-466B-EE95B2141B45}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
@@ -37,6 +43,9 @@
     <ClInclude Include="src\Neo\Events\MouseEvent.h">
       <Filter>Neo\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Neo\ImGui\ImGuiLayer.h">
+      <Filter>Neo\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Neo\Layer.h">
       <Filter>Neo</Filter>
     </ClInclude>
@@ -50,16 +59,22 @@
       <Filter>Neo</Filter>
     </ClInclude>
     <ClInclude Include="src\NeoPCH.h" />
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\imgui_impl_opengl3_loader.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
-    <ClInclude Include="src\Platform\OpenGL\imgui_impl_opengl3_loader.h" />
-    <ClInclude Include="src\Neo\ImGui\ImGuiLayer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Neo\Application.cpp">
       <Filter>Neo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Neo\ImGui\ImGuiLayer.cpp">
+      <Filter>Neo\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Neo\Layer.cpp">
       <Filter>Neo</Filter>
@@ -71,10 +86,11 @@
       <Filter>Neo</Filter>
     </ClCompile>
     <ClCompile Include="src\NeoPCH.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
-    <ClCompile Include="src\Neo\ImGui\ImGuiLayer.cpp" />
   </ItemGroup>
 </Project>

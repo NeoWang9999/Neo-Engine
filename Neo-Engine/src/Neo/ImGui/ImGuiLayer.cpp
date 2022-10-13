@@ -91,7 +91,6 @@ namespace Neo {
         dispatcher.Dispatch<KeyReleasedEvent>(NEO_BIND_EVENT_FN(ImGuiLayer::OnKeyReleasedEvent));
         dispatcher.Dispatch<KeyTypedEvent>(NEO_BIND_EVENT_FN(ImGuiLayer::OnKeyTypedEvent));
         dispatcher.Dispatch<WindowResizeEvent>(NEO_BIND_EVENT_FN(ImGuiLayer::OnWindowResizeEvent));
-
     }
 
     bool ImGuiLayer::OnMouseButtonPressedEvent(MouseButtonPressedEvent& e)
