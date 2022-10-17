@@ -159,9 +159,11 @@
     <ClInclude Include="src\Neo\Events\MouseEvent.h" />
     <ClInclude Include="src\Neo\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Neo\Input.h" />
+    <ClInclude Include="src\Neo\KeyCodes.h" />
     <ClInclude Include="src\Neo\Layer.h" />
     <ClInclude Include="src\Neo\LayerStack.h" />
     <ClInclude Include="src\Neo\Log.h" />
+    <ClInclude Include="src\Neo\MouseButtonCodes.h" />
     <ClInclude Include="src\Neo\Window.h" />
     <ClInclude Include="src\NeoPCH.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />

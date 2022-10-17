@@ -5,6 +5,10 @@
 #include "Neo/Layer.h"
 #include "Neo/Log.h"
 
+#include "Neo/KeyCodes.h"
+#include "Neo/MouseButtonCodes.h"
+#include "Neo/Input.h"
+
 #include "Neo/ImGui/ImGuiLayer.h"
 
 // ----- Entry Point ----------------------------
