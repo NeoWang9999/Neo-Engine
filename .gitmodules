@@ -7,3 +7,6 @@
 [submodule "Neo-Engine/vendor/ImGui"]
 	path = Neo-Engine/vendor/ImGui
 	url = https://github.com/TheCherno/imgui
+[submodule "Neo-Engine/vendor/glm"]
+	path = Neo-Engine/vendor/glm
+	url = git@github.com:g-truc/glm.git

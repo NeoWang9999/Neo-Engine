@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\WorkSpace\Cpp_Project\Neo-Engine\bin\Debug-windows-x86_64\Neo-Engine\Neo-Engine.dll</FullPath>
+      <FullPath>D:\WorkSpace\cpp_Projects\Neo-Engine\bin\Debug-windows-x86_64\Neo-Engine\Neo-Engine.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

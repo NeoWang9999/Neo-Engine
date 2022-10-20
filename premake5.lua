@@ -16,6 +16,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Neo-Engine/vendor/GLFW/include"
 IncludeDir["Glad"] = "Neo-Engine/vendor/Glad/include"
 IncludeDir["ImGui"] = "Neo-Engine/vendor/ImGui"
+IncludeDir["glm"] = "Neo-Engine/vendor/glm"
 
 include "Neo-Engine/vendor/GLFW"
 include "Neo-Engine/vendor/Glad"
@@ -36,7 +37,9 @@ project "Neo-Engine"
     files
     {
         "%{prj.name}/src/**.h",
-        "%{prj.name}/src/**.cpp"
+        "%{prj.name}/src/**.cpp",
+        "%{prj.name}/vendor/glm/glm/**.hpp",
+        "%{prj.name}/vendor/glm/glm/**.inl"
     }
 
     includedirs
@@ -45,7 +48,8 @@ project "Neo-Engine"
         "%{prj.name}/vendor/spdlog/include",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.Glad}",
-        "%{IncludeDir.ImGui}"
+        "%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
     }
 
     links
@@ -105,7 +109,8 @@ project "Sandbox"
     includedirs
     {
         "Neo-Engine/vendor/spdlog/include",
-        "Neo-Engine/src"
+        "Neo-Engine/src",
+		"%{IncludeDir.glm}"
     }
 
     links
